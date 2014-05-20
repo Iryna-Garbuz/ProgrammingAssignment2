@@ -16,10 +16,7 @@ makeCacheMatrix <- function(x = matrix())
   }
   
   # The function returns values of the matrix
-  get <- function()
-  {
-    x
-  }
+  get <- function() x
   
   # The function stores values of the inverse matrix
   setinverse <- function(matrix.inv)
@@ -28,11 +25,8 @@ makeCacheMatrix <- function(x = matrix())
   }
   
   # The function returns the inverse matrix
-  getinverse <- function()
-  {
-    inv
-  }
-  
+  getinverse <- function() inv
+ 
   # This list represents a special "matrix" object that can cache its inverse
   list(set = set,
        get = get,
